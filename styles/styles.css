@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Figtree-ExtraBold';
+    src: url(../assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Figtree-Medium';
+    src: url(../assets/fonts/static/Figtree-Medium.ttf);
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --blue: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0 1.98vw;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    width: 85vw;
+    margin-bottom: 6vh;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid var(--gray-950);
+    background-color: var(--white);
+    box-shadow: 0.7rem 0.7rem 0;
+
+    display: flex;
+    flex-direction: column;
+
+
+    & .blog-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.625rem;
+
+    }
+}
+
+.text {
+    margin: 1.5rem 0;
+
+    display: grid;
+    gap: 0.75rem;
+
+    & .learning {
+        width: 5.625rem;
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+        background-color: var(--yellow);
+
+    }
+
+    & .learning,
+    .date {
+        font-size: clamp(0.75rem, 6vw, 1rem);
+    }
+
+    & .info {
+        font-size: clamp(0.875rem, 6vw, 1.1rem);
+        color: var(--gray-500);
+        line-height: 1.5;
+    }
+}
+
+h1 {
+    font-size: clamp(1.2rem, 6vw, 1.5rem);
+
+    &:hover {
+        color: var(--yellow);
+        cursor: pointer;
+    }
+}
+
+.font-extraBold {
+    font-family: 'Figtree-ExtraBold', sans-serif;
+    color: var(--gray-950);
+}
+
+.font-medium {
+    font-family: 'Figtree-Medium', sans-serif;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+
+    & img {
+        max-width: 15%;
+        height: auto;
+    }
+}
+
+.name {
+    margin-left: 0.344rem;
+    font-family: 'Figtree-ExtraBold', sans-serif;
+    font-size: clamp(0.875rem, 6vw, 1.1rem);
+    color: var(--gray-950);
+}
+
+.attribution {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: clamp(0.72rem, 6vw, 0.72rem);
+}
+
+.attribution a {
+    color: var(--blue);
+}
+
+@media (min-width: 48rem) {
+    .card {
+        width: 24rem;
+    }
+}
+
+@media (min-width: 26.625rem) and (max-width: 47.938rem) {
+    .card {
+        width: 24rem;
+    }
+}
