@@ -13,7 +13,7 @@
     --white: hsl(0, 0%, 100%);
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
-    --blue: hsl(228, 45%, 44%);
+    --blue: hsla(228, 45%, 44%, 0.808);
 }
 
 * {
@@ -119,6 +119,7 @@ h1:hover {
     font-family: sans-serif;
     text-align: center;
     font-size: clamp(0.72rem, 6vw, 0.72rem);
+    color: var(--gray-500);
 }
 
 .attribution a {
