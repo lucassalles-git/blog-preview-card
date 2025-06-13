@@ -24,8 +24,10 @@ I created a blog card with HTML and CSS. The goal was to practice semantic HTML,
 
 ###Links
 
-- Solution URL: [https://github.com/your-username/qr-code-component-main](https://github.com/lucassalles-git/qr-code-component-main)
-- Live site URL: [https://your-username.github.io/qr-code-component-main](https://lucassalles-git.github.io/qr-code-component-main/)
+- Solution URL: [https://github.com/lucassalles-git/blog-preview-card]
+(https://github.com/lucassalles-git/blog-preview-card)
+- Live site URL: [https://lucassalles-git.github.io/blog-preview-card/]
+(https://lucassalles-git.github.io/blog-preview-card/)
 
 ### Built with
 
