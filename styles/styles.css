@@ -23,7 +23,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 1.75%;
     background-color: var(--yellow);
     display: flex;
